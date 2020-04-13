@@ -7,9 +7,8 @@ This repo provides a demo for standard data analysis workflow. It includes the f
 
 ### Project organisation documents
 - Database relationship diagram:
-    - https://app.dbdesigner.net/designer/schema/300586
+    - https://app.dbdesigner.net
 - Workflow design:
-    - https://docs.google.com/presentation/d/1bBYGe2z8csv3KGRunilwghvsaZma15y7KHf29lajY_k/edit?usp=sharing
 
 
 ### How do I use it?
@@ -20,7 +19,7 @@ $ mv pwc_config.json ~/.docker/config.json
 ```
 or if you have local edits you wish to preserve, simply append the proxy information to your `config.json` file. For windows users, I am not sure where the file is located as I do not have a windows machine to experiment with.
 1. Collect all relevant data and save them to the google drive under '/Data/raw'. 
-    - https://drive.google.com/open?id=1T_Ul9pf7HPI1WbAssyozrU6vxnPRfesb
+    - Link to data location
 2. The data under '/Data/support/' is the support data such as public holidays. Please keep it as it is.
 3. Make your machine ready. Please make sure you already have:
     - PwC github account
