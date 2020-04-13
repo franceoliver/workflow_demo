@@ -1,0 +1,38 @@
+version: "3.7"
+
+networks:
+  backend:
+    driver: "bridge"
+    name: "demo-net"
+
+services:
+  database:
+    build:
+      context: "./wage_trust_db"
+      dockerfile: "Dockerfile"
+    image: "wage_trust_db"
+    container_name: wage_trust_db
+    shm_size: 2GB
+    environment:
+      - POSTGRES_PASSWORD=docker
+    networks:
+      - "backend"
+    ports:
+      - "9876:5432"
+    volumes:
+      - ./DATA/db:/var/lib/postgresql/data
+
+#  app:
+#    build:
+#      context: "./rda_module"
+#      dockerfile: "Dockerfile"
+#    image: "rda_module"
+#    container_name: wage_trust_rda
+#    depends_on:
+#      - "database"
+#    networks:
+#      - "backend"
+#    ports:
+#      - "8080:8080"
+#    command: python3 /usr/src/app/waitress_server.py
+

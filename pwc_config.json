@@ -1,0 +1,20 @@
+{
+  "stackOrchestrator" : "swarm",
+  "experimental" : "disabled",
+  "credsStore" : "desktop",
+  "auths" : {
+
+  }
+}
+
+{
+  "proxies":
+  {
+    "default":
+    {
+      "httpProxy": "http://aucloudproxy.aap.pwcinternal.com:3128",
+      "httpsProxy": "http://aucloudproxy.aap.pwcinternal.com:3128",
+      "ftpProxy": "http://aucloudproxy.aap.pwcinternal.com:3128"
+    }
+  }
+}
